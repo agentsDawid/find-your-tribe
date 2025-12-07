@@ -1,6 +1,6 @@
 openai
 streamlit
 pandas
-pycaret
+pycaret.clustering
 plotly.express
 python-dotenv
