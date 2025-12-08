@@ -1,6 +1,6 @@
 openai
 streamlit
 pandas
-pycaret
+pycaret==3.3.2
 plotly
 python-dotenv
