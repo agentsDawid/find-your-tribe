@@ -3,6 +3,6 @@ streamlit
 pandas
 plotly
 python-dotenv
-pycaret==2.3.10
+conda-forge::pycaret
 numpy
 scikit-learn
