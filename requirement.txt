@@ -1,6 +1,8 @@
 openai
 streamlit
 pandas
-pycaret==3.3.2
 plotly
 python-dotenv
+pycaret==2.3.10
+numpy
+scikit-learn
