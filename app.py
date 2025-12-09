@@ -211,7 +211,12 @@ st.markdown("""
     </p>
 """, unsafe_allow_html=True)
 
+# Ładowanie modelu i danych
+model = get_model()
 all_df = get_all_participants()
+cluster_names_and_descriptions = get_cluster_names_and_descriptions()
+
+
 # Sidebar
 with st.sidebar:
     st.markdown("""
@@ -235,10 +240,6 @@ with st.sidebar:
         'gender': gender,
     }])
 
-# Ładowanie modelu i danych
-model = get_model()
-
-cluster_names_and_descriptions = get_cluster_names_and_descriptions()
 
 # Predykcja
 predicted_cluster_id = predict_model(model, data=person_df)["Cluster"].values[0]
